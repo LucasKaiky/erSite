@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    max-height: 200vh;
+    font-family: 'Lora';
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    height: 8vh;
+}
+
+main{
+    height: 200vh;
+    width: 100%;
+    background: url('img/1151243.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+nav ul li{
+    color: white;
+    padding: 0 15px;
+}
+
+.logo{
+    width: 100%;
+}
+
+.logoimg{
+    width: 200px;
+    padding-left: 30px;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    float: right;
+	margin-right: 20px;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+footer{
+    height: 12vh;
+    background-color: black;
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.nav-list li a:hover{
+    color: gold;
+    transition: .5s;
+}
+
+.nav-list li a:active{
+    color: gold;
+}
+
+nav{
+    border-bottom: solid 1px gold;
+}
+
+footer{
+    border-top: solid 1px gold;
+}
+
+checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+@media (max-width: 1275px){
+    .boxes{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .boxes .bann{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .oi{
+        display: none;
+    }
+
+    .video iframe{
+        bottom: 10px;
+        left: -60px;
+        height: 70%;
+        width: 50%;
+        
+    }
+}
+@media (max-width: 952px){
+	nav ul li a{
+		font-size: 16px;
+	}
+    .boxes{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .boxes .bann{
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+
+    .video iframe{
+        bottom: 50px;
+        left: -60px;
+        height: 70%;
+        width: 50%;
+        
+    }
+}
+
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+   
+    footer{
+        width: 100%;
+        height: 11.9vh;
+    }
+
+    .boxes .box{
+        margin: auto;
+    }
+	.nav-list{
+		position: sticky;
+		height: 8vh;
+		background: #000000;
+		top: 8vh;
+		text-align: center;
+		transition: all 1.0s;
+        
+	}
+	nav ul li{
+		display: block;
+		margin: 60px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #5434af;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+    .boxes{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .boxes .bann{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    .video iframe{
+        bottom: 50px;
+        left: -60px;
+        height: 70%;
+        width: 50%;
+        
+    }
+}
+
+
+@media (max-width: 627px){
+    .boxes{
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .boxes .bann{
+        width: 35%;
+        height: 20%;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    
+    .video iframe{
+        bottom: 50px;
+        left: -60px;
+        height: 70%;
+        width: 50%;
+        
+    }
+}
+.logoimg:hover{
+    transform: scale(1.0);
+    transition: all 1s;
+}
+
+.foot{
+    text-decoration: none;
+    list-style: none;
+}
+
+.eu li{
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+#redes{
+    justify-content: space-between;
+}
+
+.red{
+    margin-top: 10px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.boxes{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50px;
+    width: 100%;
+    height: 70vh;
+    
+}
+
+.boxes img{
+    top: 35vh;
+}
+
+.ohio{
+    position: relative;
+}
+
+.boxes img{
+    height: 24vh;
+    opacity: calc(1);
+    margin-left: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 22vh;
+    border: solid 1px black;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.bann{
+    background-color: black;
+    width: 300px;
+    height: 24vh;
+    opacity: calc(1.0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oi{
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    width: 40%;
+}
+
+
+.video{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 87%;
+
+}
+
+.video iframe{
+    position: absolute;
+    left: 36%;
+    top: 2%;
+    border-radius: 10px;
+    border: solid 1px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px black;
+}
+
+.vid{
+    width: 30%;
+    height: 300px;
+}
+
+.ohio a :hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.log{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.swiper{
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    top: 65%;
+  }
+
+.swiper-slide{
+    bottom: 60px;
+}
+
+.swiper-slide img{
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: solid .2px rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    top: 15%;
+    left: 35%;
+}
+
+.swiper-slide p{
+    color: white;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 55.5%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 200px;
+    height: 300px;
+}
+
+.swiper h1{
+    text-align: center;
+    color: white;
+}
